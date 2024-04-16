@@ -1,6 +1,43 @@
 {% extends "base.html" %} {% block title %}Minimized home{% endblock %}
 {% block content %}
+<head> 
+    <style> 
+        body { 
+            background-image: url( 
+"https://media.geeksforgeeks.org/wp-content/uploads/20200318142240/Bootstrap5.png"); 
+            background-repeat: no-repeat; 
+            background-size: 100%; 
+            background-attachment: fixed; 
+        } 
+          
+        h1 { 
+            color: white; 
+            height: 250px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        } 
+          
+        .card { 
+            top: 50%; 
+            box-shadow: 0 0 5px 0; 
+            background: inherit; 
+            backdrop-filter: blur(10px); 
+            margin: 100px; 
+            text-align: center; 
+        } 
+    </style> 
+</head> 
 <h1>
 This is your home page
 </h1>
+<body> 
+  
+    <div class="container"> 
+        <div class="card card-body" 
+            style="justify-content: center;"> 
+            <h1>GeeksforGeeks</h1> 
+        </div> 
+    </div> 
+</body> 
     {% endblock %}
