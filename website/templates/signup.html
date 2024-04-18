@@ -1,6 +1,81 @@
 {% extends "base.html" %} {% block title %}Signup{% endblock %}
 {% block content %}
+<head>
+    <style>
+        body {
+            background-image: url(
+"https://wallpapercosmos.com/w/full/9/5/5/2054-3840x2160-desktop-4k-firewatch-background.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+label{      color: #e8fcfb;
+            font-family: Verdana;
+            font-size: 24px;
+            display: flex;
+            }
+
+        h1 {
+            color: #2d67c4;
+            height: 100px;
+            display: flex;
+
+
+        }
+
+        .card {
+            top: 50%;
+            box-shadow: 0 0 5px 0;
+            background: inherit;
+            backdrop-filter: blur(2px);
+            margin: 20px;
+
+        }
+    </style>
+</head>
 <h1>
 you clicked on the signup page
 </h1>
+<h3 align="center">Sign up</h3>
+<div class="card card-body" align="center">
+<div class="form-group">
+<label for="email">email address</label>
+<input type= "email"
+       class = "form-control"
+       id = "email"
+       name = "email"
+       placeholder= "enter email"
+ />
+</div>
+<div class="form-group">
+<label for="first_name">first name</label>
+<input type= "text"
+       class = "form-control"
+       id = "first_name"
+       name = "first_name"
+       placeholder= "enter first name"
+ />
+</div>
+<div class="form-group">
+<label for="Password1">Password</label>
+<input type= "password"
+       class = "form-control"
+       id = "Password1"
+       name = "Password1"
+       placeholder= "enter Password"
+ />
+</div>
+<div class="form-group">
+<label for="Password2">Password (confirm)</label>
+<input type= "password"
+       class = "form-control"
+       id = "Password2"
+       name = "Password2"
+       placeholder= "Confirm Password"
+ />
+</div>
+
+<br />
+<button type="submit" class="btn btn-primary">submit</button>
+     </div>
     {% endblock %}
