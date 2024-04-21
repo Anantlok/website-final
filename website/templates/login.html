@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block title %}login{% endblock %}
+{% block content %}
+<head>
+    <style>
+        body {
+            background-image: url(
+"https://64.media.tumblr.com/cf118a64483c7fedc6c55c5fde9ef2e3/d974457761be5d27-7e/s2048x3072/2bdb113fa35a5b1a149059bc8ae3826115eef9b9.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+label{      color: #e8fcfb;
+            font-family: Verdana;
+            font-size: 24px;
+            display: flex;
+            }
+
+        h1 {
+            color: black;
+            height: 100px;
+            display: flex;
+
+
+        }
+
+        .card {
+            top: 50%;
+            box-shadow: 0 0 5px 0;
+            background: inherit;
+            backdrop-filter: blur(2px);
+            margin: 20px;
+
+        }
+    </style>
+</head>
+<h1>
+
+</h1>
+<form method="POST">
+<h3 align="center">Login</h3>
+<div class="card card-body" align="center">
+<div class="form-group">
+<label for="email">email address</label>
+<input type= "email"
+       class = "form-control"
+       id = "email"
+       name = "email"
+       placeholder= "enter email"
+ />
+</div>
+<div class="form-group">
+<label for="first_name">first name</label>
+<input type= "text"
+       class = "form-control"
+       id = "first_name"
+       name = "first_name"
+       placeholder= "enter first name"
+ />
+</div>
+<div class="form-group">
+<label for="Password">Password</label>
+<input type= "password"
+       class = "form-control"
+       id = "Password"
+       name = "Password"
+       placeholder= "enter Password"
+ />
+</div>
+
+<br />
+<button type="submit" class="btn btn-primary">submit</button>
+    </form>
+ </div>
+
+
+    {% endblock %}
