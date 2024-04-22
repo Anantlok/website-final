@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from .model import user
 from werkzeug.security import generate_password_hash, check_password_hash
+from . import db
 auth = Blueprint('auth', __name__)
 @auth.route('/home',)
 def home():
