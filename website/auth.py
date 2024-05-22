@@ -9,6 +9,9 @@ auth = Blueprint('auth', __name__)
 def home():
 
     return render_template("home.html", user=current_user)
+@auth.route('/joke', methods=['GET','POST'])
+def joke():
+    return render_template("joke.html", user=current_user)
 @auth.route('/login', methods=['GET','POST'])
 def login():
     if request.method == 'POST':
